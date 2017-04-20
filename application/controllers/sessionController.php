@@ -13,7 +13,7 @@
 		
 		}
 
-		public function user_login_process()
+		public function userLoginProcess()
 
 		{	
 
@@ -78,7 +78,6 @@
 		}
 
 	}	
-
 
 
 
