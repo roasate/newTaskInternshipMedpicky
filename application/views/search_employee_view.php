@@ -12,6 +12,7 @@
 		<br>
 	</header>
 	<section>
+		<?php echo validation_errors(); ?>
 		<form action="<?php echo base_url('/SearchEmployeeController/search'); ?>" method='post'>
 			<label>User Name <span>*</span>  :</label>
 			<input type="text" name="user_name" placeholder="User Name">
