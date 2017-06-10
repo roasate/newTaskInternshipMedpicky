@@ -51,6 +51,8 @@
 			<div id='div'><input id = "submit" type="submit" name="Search" value="Search" )></div>
 		</form>		
 	</section>
+	<?php 
+          if (count($data)>0){ ?>
 	 <table border="1">  
       <tbody>  
          <tr>  
@@ -62,7 +64,7 @@
             <td>Category</td>  
          </tr>  
          <?php 
-          if (count($data)>0){
+        
          	foreach ($data as $row)  
          	{  
 	           	?><tr>  
