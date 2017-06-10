@@ -44,7 +44,8 @@ class SearchEmployeeController extends CI_Controller
 				 									   
 			} else {
 				echo "Enter valid details";
-				$this->load->view('search_employee_view');	
+					$result['data']=array();
+					$this->load->view('search_employee_view',$result);		
 			}
 
 
