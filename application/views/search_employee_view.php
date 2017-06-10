@@ -49,18 +49,19 @@
             <td>User Id</td>  
             <td>Category</td>  
          </tr>  
-         <?php  
-         foreach ($data as $row)  
-         {  
-            ?><tr>  
-            <td><?php echo $row->user_name;?></td>  
-            <td><?php echo $row->email;?></td>
-            <td><?php echo $row->date_of_birth;?></td>  
-            <td><?php echo $row->date_of_registration;?></td>
-            <td><?php echo $row->user_id;?></td>  
-            <td><?php echo $row->category;?></td>                          
-            </tr>  
-         <?php }  
+         <?php 
+          if (count($data)>0){
+         	foreach ($data as $row)  
+         	{  
+	           	?><tr>  
+	            <td><?php echo $row->user_name;?></td>  
+	            <td><?php echo $row->email;?></td>
+	            <td><?php echo $row->date_of_birth;?></td>  
+	            <td><?php echo $row->date_of_registration;?></td>
+	            <td><?php echo $row->user_id;?></td>  
+	            <td><?php echo $row->category;?></td>                          
+	            </tr>  
+         <?php }}  
          ?>  
       </tbody>  
    </table>  
