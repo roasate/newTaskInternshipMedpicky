@@ -21,12 +21,12 @@
 			<input type="text" name="email" placeholder="Email">
 
 			<label>Date Of Birth<span>*</span>  :</label>
-			<input type="text" name="dob" placeholder="Date of Birth">
+			<input type="Date" name="dob" placeholder="Date of Birth">
 			<br>
 			<br>
 			<br>	
 			<label>Registeration Date<span>*</span>  :</label>
-			<input type="text" name="registration_date" placeholder="Registeration Date">
+			<input type="Date" name="registration_date" placeholder="Registeration Date">
 
 			<label>Category <span>*</span>  :</label>
 			<input type="text" name="category" placeholder="Category">
