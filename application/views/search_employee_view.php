@@ -24,10 +24,9 @@
 		<br>
 	</header>
 	<section>
-		<?php echo validation_errors(); ?>
 		<form action="<?php echo base_url('/SearchEmployeeController/search'); ?>" method='post'>
 			<label>User Name <span>*</span>  :</label>
-			<input type="text" name="user_name" placeholder="User Name">
+			<input type="text" name="user_name" placeholder="User Name" >
 	
 			<label>Email <span>*</span> :</label>
 			<input type="text" name="email" placeholder="Email">
@@ -47,6 +46,24 @@
 			<input type="text" name="user_id" placeholder="User Id">
 			<br>
 			<br>
+			<br>	
+			
+			<label>Blood Group<span>*</span>  :</label>
+			<select name="cars">
+			    <option>None</option>
+			    <option>A +VE</option>
+			    <option>A -VE </option>
+			    <option>B +VE</option>
+			    <option>B -VE </option>
+			    <option>AB +VE</option>
+			    <option>AB -VE </option>
+			    <option>O +VE</option>
+			    <option>O -VE </option>
+			</select>
+
+
+			<br>
+			<br>
 			<br>
 			<div id='div'><input id = "submit" type="submit" name="Search" value="Search" )></div>
 		</form>		
@@ -62,6 +79,8 @@
             <td>Date of Registration</td>  
             <td>User Id</td>  
             <td>Category</td>  
+			<td>Blood Group</td>  
+
          </tr>  
          <?php 
         
@@ -74,6 +93,7 @@
 	            <td><?php echo $row->date_of_registration;?></td>
 	            <td><?php echo $row->user_id;?></td>  
 	            <td><?php echo $row->category;?></td>                          
+	            <td><?php echo $row->blood_group;?></td>                          
 	            </tr>  
          <?php }}  
          ?>  

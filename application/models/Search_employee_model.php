@@ -19,7 +19,7 @@
 				//$condition = "user_name =" . "'" . $data[0] . "' AND " . "email =" . "'" . $data[1] . "' AND " . "user_id =" . "'" . $data[5] . "' AND " . "categANDy =" . "'" . $data[4] . "'";
 				// 
 				foreach ($data as $value) {
-					if($value == "") {
+					if($value == "" || $value == "None") {
 
 					} else {
 						if ($flag == 0) {
@@ -43,7 +43,10 @@
 								break;
 							case 5:
 								$condition = $condition . "category =" . "'" . $data[4] . "'";$flag = 0;
-								break;																	
+								break;	
+							case 7:
+								$condition = $condition . "blood_group =" . "'" . $data[6] . "'";$flag = 0;
+																
 									
 							
 							default:
